@@ -28,7 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    "~/plugins/test.js"
+    "~/plugins/test.js",
+    "~/plugins/firebase.js"
   ],
   router: {
     middleware: 'test'

@@ -35,6 +35,9 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  mounted () {
+    console.log(this.$firebase);
   }
 }
 </script>
