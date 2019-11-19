@@ -28,12 +28,16 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    "~/plugins/test.js",
-    "~/plugins/firebase.js"
+    "~/plugins/firebase.client.js",
+    "~/plugins/cookies.client.js",
+
+    "~/plugins/download.server.js",
+    "~/plugins/jwt.server.js",
+    "~/plugins/cookie.server.js",
   ],
-  router: {
-    middleware: 'test'
-  },
+  // router: {
+  //   middleware: 'test'
+  // },
   /*
   ** Nuxt.js dev-modules
   */

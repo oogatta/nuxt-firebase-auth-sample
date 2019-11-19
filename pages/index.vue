@@ -5,9 +5,8 @@
       <h1 class="title">
         こんにちは
       </h1>
-      <nuxt-link to="/test">テスト</nuxt-link>
       <h2 class="subtitle">
-        My mathematical Nuxt.js project
+        Nuxt / Firebase Auth Sample
       </h2>
       <div class="links">
         <a
@@ -25,6 +24,7 @@
           GitHub
         </a>
       </div>
+      <p class="signin"><nuxt-link to="/signin">Sign In</nuxt-link></p>
     </div>
   </div>
 </template>
@@ -37,7 +37,6 @@ export default {
     Logo
   },
   mounted () {
-    console.log(this.$firebase);
   }
 }
 </script>
@@ -72,5 +71,9 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.signin {
+  margin-top: 30px;
 }
 </style>
