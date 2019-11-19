@@ -13,7 +13,7 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ commit }, { req, app }) {
-    const cookies = app.cookie.parse(req.headers.cookie || '');
+    const cookies = app.cookie.parse(req && req.headers && req.headers.cookie || '');
     const firebaseIdToken = cookies["firebase_id_token"];
 
     async function getPublicKeys({ kid }, callback) {
